@@ -1,0 +1,61 @@
+
+            #userid {
+                font-size:120%; color:Navy; text-transform:uppercase; 
+            } 
+            .titlebar {
+                margin-left:-3%; 
+            } 
+            .coname { 
+                text-transform:uppercase; padding:10% 0%; 
+            }
+            a.active, a:active {
+                color:maroon ;
+            } 
+            .body img {
+                width:100%; height:400px !important;
+            }
+            .about {
+                background-color:black; color:white; font-family:"New Times Roman"; height:110px;
+            }
+            .about h4 {
+                text-decoration:underline;
+            }
+            .glyphicon {
+                font-size:18px; 
+            }
+            .about .glyphicon {
+                font-size:36px;  margin-top:5%; 
+            }
+            .editcontainer1 {
+                margin-left:20%; 
+            } 
+            .editcontainer2 {
+                margin-right:20%; 
+            } 
+            .about p {
+                color:white; overflow-y:auto; -webkit-animation-name:compDt; /* Chrome, Safari, Opera */ -webkit-animation-duration:10s; 
+                -webkit-animation-delay:1s; -webkit-animation-iteration-count:infinite; -webkit-animation-timing-function:ease-in-out; /* Chrome, Safari, Opera */ animation:compDt 10s ease-in-out 1s infinite; 
+            } 
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes compDt {
+                0%   {color: white;}
+                25%  {color: blue ;}
+                50% {color: navy;}
+                75%  {color: blue;}
+                100% {color: white;}
+            } 
+            /* Standard syntax */
+            @keyframes compDt {
+                0%   {color: white;}
+                25%  {color: blue ;}
+                50% {color: navy;}
+                75%  {color: blue;}
+                100% {color: white;}
+            } 
+            .date {
+                font-size:12px; color:Navy; font-family:"New Times Roman";
+            } 
+            .footnote {
+                font-size:10px; font-family:"New Times Roman";
+            }
+

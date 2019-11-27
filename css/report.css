@@ -1,0 +1,76 @@
+
+            #userid {
+                font-size:120%; color:Navy; text-transform:uppercase; 
+            } 
+            .titlebar {
+                margin-left:-3%; 
+            } 
+            .coname { 
+                text-transform:uppercase; padding:6% 0% 1.5% 0%; 
+            } 
+            a.active, a:active {
+                color:maroon ;
+            } 
+            .glyphicon {
+                font-size:18px;
+            }
+            .firstbar {
+                background-color:black; padding:0.5%; color:white; margin:0%; 
+            }
+            input[list] {
+                width:20%; border:none; background-color:#f1f1f1; border-radius:6px; padding:5px 10px;
+            }
+            input[type=date] {
+                width:15%; border:2px solid #ccc; background-color:#f1f1f1; border-radius:6px; padding:2px 10px; font-size:14px; 
+            }
+            .sign {
+                font-size:22px; 
+            }
+            .bigbox {
+                width:95%; height:300px; border:2px inset Navy; margin:auto; 
+                border-radius:6px; background-color:#09092a; z-index:-1;
+            } 
+            .subBox1 {
+                padding:4% 2%; color:white; font-family:New Times Roman; 
+            }
+            .subBox2 { 
+                background:url("image/gadgets2.jpg") no-repeat center; 
+                background-size:cover; z-index:1; padding:0%; 
+            } 
+            .bwhite {
+                background-color:rgba(0,0,0,0.4); color:white; 
+                font-family:New Times Roman; width:270px; height:297px; 
+                font-size:22px; padding:2% 1%;
+            } 
+            .bwhite .smaller {
+                font-size:22px; 
+            }
+            .bwhite .glyphicon {
+                font-size:30px; position:relative; right:2%; 
+            }
+            .bwhite span {
+                font-size:135px; -webkit-animation-name:showitem; /* Chrome, Safari, Opera */ -webkit-animation-duration:7s; 
+                -webkit-animation-delay:1s; -webkit-animation-iteration-count:infinite; -webkit-animation-timing-function:ease-in-out; /* Chrome, Safari, Opera */ animation:showitem 7s ease-in-out 1s infinite; 
+            } 
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes showitem { 
+                0%   {color: white;}
+                25%   {color: blue;}
+                50%   {color: brown;}
+                75%  {color: khaki;}
+                100% {color: white;}
+            } 
+            /* Standard syntax */
+            @keyframes showitem { 
+                0%   {color: white;}
+                25%   {color: blue;}
+                50%   {color: brown;}
+                75%  {color: khaki;}
+                100% {color: white;}
+            } 
+            #SumQT, #SumQS, #SumInc, #SumIncc, #SumExp, #SumCredCus, #SumCredSup, #SumRtCus, #SumRtSup, #addedCus, #addedSup {
+                font-size:20px; 
+            } 
+            #SumQTb, #SumQSb, #SumQSc, #SumIncb, #SumCredCusb, #SumRtCusb, #allCus, #allSup {
+                font-size:18px; 
+            }

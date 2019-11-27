@@ -1,0 +1,130 @@
+body{
+    background: #FFFFFF;
+} 
+            #userid {
+                font-size:120%; color:Navy; text-transform:uppercase; 
+            } 
+            .titlebar {
+                margin-left:-3%; 
+            } 
+            .coname { 
+                text-transform:uppercase; padding:6% 0% 1.5% 0%; 
+            } 
+            a.active, a:active {
+                color:maroon ;
+            } 
+            .statementbar {
+                background:white; border:2px solid Navy; border-radius:8px; font-size:25px; color:Navy; text-shadow:2px 2px 8px grey; box-shadow:2px 1px 4px grey, 1px 2px 6px grey;
+            }
+            .glyphicon {
+                font-size:18px;
+            }
+            .inputbar1 {
+                background:white; border:2px solid grey; border-radius:8px; padding-bottom:20px; margin-left:5%;
+            }
+            .date {
+                font-size:12px; color:Navy; font-family:"New Times Roman";
+            }
+            .borderedleft {
+                border-left:2px dotted black; 
+            }
+            textarea {
+                resize:none; 
+            }
+            .ralign input[type=number] {
+                width:100%; 
+            }
+            .ralign {
+                margin-left:3%;
+            }
+            .button {
+                width:100%; padding:5px 32px; box-shadow: 0 5px #999; text-align:center; font-family:"New Times Roman"; font-weight:bold; font-size:16px; cursor:pointer; color:Navy; border:2px solid Navy; border-radius:6px; -webkit-transition:all 0.5s; transition:all 0.5s;
+            }
+            .button2 {
+                width:90%;  
+            }
+            .button:hover {
+                background-color:Navy; color:lightgrey;
+            }
+            .button span {
+                cursor: pointer; display: inline-block; position: relative; transition: 0.5s;
+            }
+            .button span.btntext:after {
+                content: '»'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s;
+            }
+            .button:hover span {
+                padding-right: 25px;
+            }
+            .button2:hover span {
+                padding-right: 0px;
+            }
+            .button:hover span.btntext:after {
+                opacity: 1; right: 0;
+            }
+            .button:active {
+                box-shadow: 0 2px #666; transform: translateY(12px);
+            }
+            .newsupplier {
+                cursor:pointer; text-align:right; 
+            }
+            .glyphicon-fullscreen {
+                font-size:37px;
+            }
+            /* The Modal (background) */
+            .modal {
+                display:none; /* Hidden by default */ position:fixed; /* Stay in place */ z-index:1; /* Sit on top */ padding-top:122px; /* Location of the box */ left:0; top:0; 
+                width:100%; /* Full width */ height:100%; /* Full height */ overflow:auto; /* Enable scroll if needed */ background-color:rgba(0,0,0,0.9); /* Fallback color */
+            }
+            /* Modal Content (image) */
+            .modal-content {
+                margin: auto; display: block; width: 80%; max-width: 700px;
+            }
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;
+            }
+            /* Add Animation */
+            .modal-content, #caption {    
+                -webkit-animation-name: zoom; -webkit-animation-duration: 1s; animation-name: zoom; animation-duration: 1s;
+            }
+            /* The Close Button */
+            .my-close {
+                position: absolute;
+                top: 50px;
+                right: 310px;
+                color: #000;
+                font-size: 50px;
+                font-weight: bold;
+                transition: 1s;
+                padding-top: 9%;
+            }
+            .my-close:hover, .my-close:focus {
+                color: #bbb; text-decoration: none; cursor: pointer;
+            }
+            /* Clear Floats */
+            .clearfix:after {
+                content: ""; display: table; clear: both;
+            }
+            .mymodalstyle {
+                background:lightgrey; padding:3%; margin:auto; margin-top:-4%; width:600px; height:600px; box-shadow:-1px 1px 15px lightgrey, 1px 1px 15px lightgrey, -1px -1px 15px lightgrey, 1px -1px 15px lightgrey; border-radius:50%; 
+            }
+            .suppliertopbar {
+                border-radius:6px; background-color:black; color:white ; width:50%; margin:auto; font-size:20px; padding:1%;
+            }
+            .mymodalstyle .button {
+                width:80%; background-color:Navy; color:lightgrey;
+            }
+            .mymodalstyle .button:hover {
+                background-color:lightgrey; color:Navy;
+            }
+            .mymodalstyle input[type=text] {
+                width:70%; background-color:white; height:30px;
+                padding:8px 10px;
+                border:2px solid #ccc;
+                border-radius:6px; 
+                font-size:14px;
+            }
+            .mymodalstyle textarea {
+                height:100px;
+                resize: none;
+            }

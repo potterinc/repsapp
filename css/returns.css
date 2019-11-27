@@ -1,0 +1,161 @@
+
+            #userid {
+                font-size:120%; color:#0066CC; text-transform:uppercase; 
+            } 
+            .titlebar {
+                margin-left:-3%; 
+            } 
+            .coname { 
+                text-transform:uppercase; padding:6% 0% 1.5% 0%; 
+            } 
+            a.active, a:active {
+                color:maroon ;
+            } 
+            .statementbar {
+                background:white; border:2px solid #0066CC; border-radius:8px; font-size:25px; color:#0066CC; text-shadow:2px 2px 8px grey; box-shadow:2px 1px 4px grey, 1px 2px 6px grey;
+            }
+            .glyphicon {
+                font-size:18px;
+            }
+            .date {
+                font-size:12px; color:#0066CC; font-family:"New Times Roman";
+            } 
+            #topseebar {
+                background:black; color:white; width:100%; padding:0.2% 0% 0.3%; border-top-right-radius:22%; border-top-left-radius:22%; 
+            }
+            .searchitems {
+                font-family:"New Times Roman"; padding:0 1%;
+            }
+            .button {
+                width:15%; background-color:#0066CC; padding:3px 12px; box-shadow:0 5px  #999; text-align:center; font-weight:bold; font-size:14px; cursor:pointer; color:lightgrey; border:0px; border-radius:6px; -webkit-transition:all 0.5s; transition:all 0.5s;
+            } 
+            .button:hover {
+                background-color:#fff; color:#0066CC; border:2px solid #0066CC; 
+            }
+            .button:active {
+                box-shadow:0 2px #666; transform:translateY(8px);
+            }
+            .space {
+                margin:0 1%; 
+            } 
+            input[type] {
+                width:10%; border:2px solid #f1f1f1; background-color:grey; border-radius:6px; padding:2px 10px; font-size:14px; -webkit-transition:all 0.8s ease-in-out; transition:all 0.8s ease-in-out; 
+            } 
+            input[type=date] {
+                width:14%; border:2px solid #ccc; background-color:#f1f1f1; border-radius:6px; padding:5px 10px; font-size:14px; 
+            } 
+            input[type=date]:hover, input[list]:hover {
+                background-color:white; 
+            } 
+            input[list] {
+                width:26%; border:none; background-color:#f1f1f1; border-radius:6px; padding:5px 10px; 
+            } 
+            input[list].little {
+                width:14%; 
+            }
+            input[type=number] {
+                width:200px; border:none; background-color:#f1f1f1; border-radius:6px; padding:2px 10px; 
+            }
+            input[type=text] {
+                width:10%; border:2px solid #ccc; background-color:white; border-radius:6px; padding:2px 10px; font-size:14px; 
+            } 
+            textarea {
+                resize:none;
+            } 
+            .searchbar {
+                padding:2px; 
+            } 
+            .bgchange {
+                background:#0066CC; padding:0.3%;
+            }
+            .tablecontainer {
+                border:3px solid black; border-right:9px ridge black; border-left:9px ridge black; border-radius:5px; margin:-0.5%; padding:0 0.2%; overflow-y:auto;  
+            } 
+            #itemlist {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; border-collapse:collapse; width:100%; margin-bottom:0.4%;
+            }
+            #itemlist td, #itemlist th {
+                border:1px solid #ddd; text-align:left; padding:4px;
+            }
+            #itemlist tr:nth-child(odd){
+                background-color:lightgrey;
+            }
+            #itemlist tr:hover {
+                background-color:black; color:white;
+            }
+            #itemlist th {
+                padding-top:12px; padding-bottom:12px; background-color:#0066CC; color:white;
+            } 
+            .glyphicon-fullscreen {
+                font-size:37px;
+            } 
+            /* The Modal (background) */
+            .modal {
+                display:none; /* Hidden by default */ position:fixed; /* Stay in place */ z-index:1; /* Sit on top */ padding-top:0%; /* Location of the box */ left:0; top:0; 
+                width:100%; /* Full width */ height:100%; /* Full height */ overflow:auto; /* Enable scroll if needed */ background-color:rgba(0,0,0,0); /* Fallback color */
+            }
+            /* Modal Content (image) */
+            .modal-content {
+                margin: auto; display: block; width: 80%; max-width: 700px;
+            }
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;
+            }
+            /* Add Animation */
+            .modal-content, #caption {    
+                -webkit-animation-name: zoom; -webkit-animation-duration: 1s; animation-name: zoom; animation-duration: 1s;
+            }
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+            /* Standard syntax */
+            @keyframes zoom {
+                from {transform:scale(0.1)} 
+                to {transform:scale(1)}
+            }
+            /* The Close Button */
+            .close {
+                position:absolute; top:7%; right:72%; color:black; font-size:50px; font-weight:bold; transition:1s; padding-top: 9%;
+            }
+            .close:hover, .close:focus {
+                color: #bbb; text-decoration: none; cursor: pointer;
+            }
+            /* Responsive Columns */
+            @media only screen and (max-width: 700px){
+                .responsive {
+                    width: 49.99999%; margin: 6px 0;
+                }
+                .modal-content {
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 500px){
+                .responsive {
+                    width: 100%;
+                }
+            }
+            /* Clear Floats */
+            .clearfix:after {
+                content: ""; display: table; clear: both;
+            }
+            .mymodalstyle {
+                background:white; /* Standard syntax */ padding:2%; margin:auto; margin-top:17%; width:65%; height:33%; box-shadow:-1px 1px 10px grey, 1px 1px 10px grey, -1px -1px 10px grey, 1px -1px 10px grey; overflow-y:auto; 
+            }
+            .clearlists {
+                width:15%; background-color:#0066CC; padding:3px 12px; box-shadow:0 5px  #999; text-align:center; font-weight:bold; font-size:14px; cursor:pointer; color:lightgrey; border:0px; border-radius:6px; -webkit-transition:all 0.5s; transition:all 0.5s; 
+            }
+            .clearlists:hover {
+                background-color:#fff; color:#0066CC; border:2px solid #0066CC; 
+            }
+            .clearlists:active {
+                box-shadow:0 2px #666; transform:translateY(8px);
+            }
+            .mymodalstyle button {
+                width:20%; padding:12px; border-radius:50%; 
+            } 
+            .mymodalstyle button.clearlists {
+                width:40%; border-radius:6px; padding:3px; 
+            } 

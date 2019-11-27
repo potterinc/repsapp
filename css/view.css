@@ -1,0 +1,125 @@
+body{
+    background:#FFFFFF;
+} 
+#userid {
+    font-size:120%; color:#0066CC; text-transform:uppercase; 
+} 
+.titlebar {
+    margin-left:-3%; 
+}
+.line-blue{
+    height: 2px;
+    background: #0066CC;
+}
+.nav-list{
+    background: #333333;
+    height: 100%;
+    width: 100%;
+    border-right: solid 2px #0066CC;
+}
+.nav-list li{
+    list-style: none;
+}
+
+.line-red{
+    height: 2px;
+    background: #FF0000;
+}
+.line-black{
+    height: 1px;
+    background: #000000;
+}
+.coname { 
+    text-transform:uppercase; padding:6% 0% 1.5% 0%; 
+}
+.mg-top-5{
+    margin-top: 5px;
+}
+a.active, a:active {
+    color:maroon ;
+}
+.searchbar {
+    padding:3px;
+}
+.rightsearchlink {
+    position:absolute; right:2%;
+}
+.searchitems {
+    font-family:"New Times Roman"; padding:0 1%;
+} 
+.space {
+    margin:0 1%; 
+} 
+input[type]{
+    width:10%; border:2px solid #f1f1f1; background-color:grey; border-radius:6px; padding:2px 10px; font-size:14px; -webkit-transition:all 0.8s ease-in-out; transition:all 0.8s ease-in-out; 
+} 
+input[type="radio"]{
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    border: none;
+}
+input[list] {
+    width:67%; border:2px solid #ccc; background-color:#f1f1f1; border-radius:6px; padding:6px 10px 6px 45px; font-size:14px; background-image:url('image/searchicon.png'); background-position:10px 10px; background-repeat:no-repeat; 
+} 
+.glyphicon {
+    font-size:18px;
+}
+.button {
+    width:12%; background-color:Navy; padding:3px 12px; box-shadow:0 5px  #999; text-align:center; font-weight:bold; font-size:14px; cursor:pointer; color:lightgrey; border:0px; border-radius:6px; -webkit-transition:all 0.5s; transition:all 0.5s;
+}
+.button1 {
+    width:45%;
+}
+.button:hover {
+    background-color:#fff; color:Navy; border:2px solid Navy; 
+}
+.button span {
+    cursor: pointer; display: inline-block; position: relative; transition: 0.5s;
+}
+.button span.btntext:after {
+    content:'»'; position:absolute; opacity:0; top:0; right:-20px; transition:0.5s;
+}
+.button:hover span {
+    padding-right:10px;
+}
+.button:hover span.btntext:after {
+    opacity:1; right:0;
+}
+.button:active {
+    box-shadow:0 2px #666; transform:translateY(8px);
+}
+.button2 {
+    width:60%; text-align:right;
+}
+.date {
+    font-size:12px; color:Navy; font-family:"New Times Roman";
+}
+.tablecontainer {
+    border:2px double #000000; border-radius:5px; margin: auto; 
+}
+#itemlist {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; border-collapse:collapse; width:100%;
+}
+#itemlist td, #itemlist th {
+    border:1px solid #ddd; text-align:left; padding:4px;
+}
+#itemlist tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+#itemlist tr:hover {
+    background-color:black; color:white;
+}
+#itemlist th {
+    padding-top:12px; padding-bottom:12px; background-color:#0066CC; color:white; text-align: center;
+}
+#itemlist td:last-child { 
+    background-color:black; color:white;
+}
+#alert {
+    color:red; font-size:105%; font-style:oblique; 
+}
+.selected{
+    background: #06ccdd;
+    color: #fff;
+}

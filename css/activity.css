@@ -1,0 +1,16 @@
+            #userid {
+                font-size:120%; color:Navy; text-transform:uppercase; 
+            } 
+            .titlebar {
+                margin-left:-3%; 
+            } 
+            a.active, a:active {
+                color:maroon ;
+            } 
+            .glyphicon {
+                font-size:18px;
+            }
+            .colored {
+                padding:0% 4%; 
+            } 
+

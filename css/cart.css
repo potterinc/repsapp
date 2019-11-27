@@ -1,0 +1,180 @@
+            body {
+                background:lightgrey;
+            } 
+            #userid {
+                font-size:120%; color:Navy; text-transform:uppercase; 
+            } 
+            .titlebar {
+                margin-left:-3%; 
+            } 
+            .coname { 
+                text-transform:uppercase; 
+            } 
+            a.active, a:active {
+                color:maroon ;
+            } 
+            .addcol {border:2px solid #0066CC;
+                padding: 5px;
+             border-radius:5px;
+            }
+            .date {
+                font-size:12px; color:#0066CC; font-family:"New Times Roman";
+            }
+            input[type='number']{
+                width: 100px;
+                border: none;
+                color: #000000 !important;
+            }
+            input[type='number']:hover, input[type='number']:focus{
+                color: #000000 !important;
+                border:none;
+            }
+            textarea {
+                border:2px solid #ccc; font-size:16px; resize:none;
+            } 
+            .button {
+                width:18%; background-color:#0066CC; padding:3px 12px; box-shadow:0 5px  #999; text-align:center; font-weight:bold; font-size:14px; cursor:pointer; color:lightgrey; border:0px; border-radius:6px; -webkit-transition:all 0.5s; transition:all 0.5s;
+            }
+            .button:hover {
+                background-color:#fff; color:#0066CC; border:2px solid #0066CC; 
+            }
+            .button span {
+                cursor: pointer; display: inline-block; position: relative; transition: 0.5s;
+            }
+            .button2 span.btntext:after {
+                content: '»'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s;
+            }
+            .button2:hover span {
+                padding-right: 25px;
+            }
+            .button2:hover span.btntext:after {
+                opacity: 1; right: 0;
+            }
+            .button:active {
+                box-shadow:0 2px #666; transform:translateY(8px);
+            }
+            .price button {
+                width:10%;
+            }
+            .price input[type=text] {
+                width:15%; 
+            }
+            .completesalesbutton {
+                width:100%;
+            }
+            .newcustomer {
+                cursor:pointer; 
+            }
+            .tablecontainer {
+                border:3px solid black; border-right:9px ridge black; border-left:9px ridge black; border-radius:5px; padding:0 0.2% 1%; margin:1% 0 0.5%; overflow-y:auto; height:300px; 
+            } 
+            .tablecontainer input[type=text] {
+                width:12%; 
+            } 
+            #itemlist {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; border-collapse:collapse; width:100%; margin-bottom:0.3%; 
+            }
+            #itemlist td, #itemlist th {
+                border:1px solid #ddd; text-align:left; padding:4px;
+            }
+            #itemlist tr:nth-child(even){
+                background-color:#f2f2f2;
+            }
+            #itemlist tr:hover {
+                background-color:black; color:white;
+            }
+            #itemlist th {
+                padding-top:12px; padding-bottom:12px; background-color: #0066CC; color:white;
+            }
+            .item-img{
+                width:150px;
+                height:150px;
+                border-radius: 5px;
+            }
+            #totalCost{
+                font-size: 50px;
+            }
+            .paymentheader{
+                background: #0066CC !important;
+                padding: 5px;
+            }
+            .glyphicon {
+                font-size:18px;
+            }
+            .glyphicon-fullscreen {
+                font-size:37px;
+            }
+            /* The Modal (background) */
+            .modal {
+                display:none; /* Hidden by default */ position:fixed; /* Stay in place */ z-index:1; /* Sit on top */ padding-top:122px; /* Location of the box */ left:0; top:0; 
+                width:100%; /* Full width */ height:100%; /* Full height */ overflow:auto; /* Enable scroll if needed */ background-color:rgba(0,0,0,0.9); /* Fallback color */
+            }
+            /* Modal Content (image) */
+            .modal-content {
+                margin: auto; display: block; width: 80%; max-width: 700px;
+            }
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;
+            }
+            /* Add Animation */
+            .modal-content, #caption {    
+                -webkit-animation-name: zoom; -webkit-animation-duration: 1s; animation-name: zoom; animation-duration: 1s;
+            }
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+            /* Standard syntax */
+            @keyframes zoom {
+                from {transform:scale(0.1)} 
+                to {transform:scale(1)}
+            }
+            /* The Close Button */
+            .close {
+                position:absolute; top:15px; right:35px; color:#f1f1f1; font-size:50px; font-weight:bold; transition:1s; padding-top: 9%;
+            }
+            .close:hover, .close:focus {
+                color: #bbb; text-decoration: none; cursor: pointer;
+            }
+            /* Responsive Columns */
+            @media only screen and (max-width: 700px){
+                .responsive {
+                    width: 49.99999%; margin: 6px 0;
+                }
+                .modal-content {
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 500px){
+                .responsive {
+                    width: 100%;
+                }
+            }
+
+            /* Clear Floats */
+            .clearfix:after {
+                content: ""; display: table; clear: both;
+            }
+            .mymodalstyle {
+                background:lightgrey; padding:3%; margin:auto; margin-top:-4%; width:600px; height:600px; box-shadow:-1px 1px 15px lightgrey, 1px 1px 15px lightgrey, -1px -1px 15px lightgrey, 1px -1px 15px lightgrey; border-radius:50%; 
+            }
+            .mymodalstyle .close {
+                position:absolute; right:70%;
+            }
+            .customertopbar {
+                border-radius:6px; background-color:black; color:white ; width:50%; margin:auto; font-size:20px; padding:1%;
+            }
+            .mymodalstyle button {
+                width:80%;
+            }
+            .mymodalstyle input[type=text] {
+                width:70%; 
+            }
+            .space{
+                margin-left:2%;
+            }
+            .spaces{
+                margin-left:1%;
+            }

@@ -1,0 +1,32 @@
+/*
+    Created on : January 31, 2019, 11:59:00 AM
+    Author     : Potter Incorporated
+*/
+
+@font-face{
+    font-family: Droid Sans;
+    src: url("../fonts/DroidSans-webfont.woff");
+}
+body{
+    background: url("../image/4.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    fill-opacity: .7;
+}
+.login{
+    width: 50%;
+    margin: auto;
+    margin-top: 200px;
+}
+.login header{
+    font-size: x-large;
+    letter-spacing: 5px;
+}
+.login footer{
+    font-family: 'Droid Sans', sans-serif;
+}
+/* For Tablet devices */
+@media screen and (max-width: 768px){
+    .login{
+        width: 60%;
+    }
+}

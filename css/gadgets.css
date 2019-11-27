@@ -1,0 +1,19 @@
+@font-face{
+    font-family: Droid Sans;
+    src: url("../fonts/DroidSans-webfont.woff");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Droid Sans', sans-serif;
+}
+.menu-link{
+    height: 150px;
+}
+.copy{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

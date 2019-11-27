@@ -1,0 +1,69 @@
+
+.container{
+    width: 95%;
+}
+.welcome {
+    font-size:140%; color:white; 
+}
+.titlebar {
+    font-size:20px; color:Navy; font-family:"New Times Roman"; 
+}
+.alertbar {
+    margin-left:1%; 
+}
+.tablecontainer{
+    height: 400px;
+    overflow: auto;
+    margin: 0 auto;
+}
+.conamebar {
+    font-size:13px; 
+}
+.conamebar i .glyphicon {
+    font-size:12px; color:Navy;
+}
+.coname {
+    font-size:14px; background-color:lightgrey; padding:7% 0% 1.5% 0%;
+}
+.menubar {
+    position: relative; width: 100%;
+}
+.right {
+    position: absolute; right: 10px; padding: 13px;
+}
+.sidebar {
+    overflow: auto; font-size:12px;
+}
+label {
+    background:lightgrey; width:100%; margin-left:1%;
+}
+.sidebar ul {
+    list-style-type: none; padding:1px; margin:0px;
+}
+.sidebar ul li:hover {
+    background:lightgrey;
+}
+a:link {
+    color:black;
+}
+a:visited {
+    color:Navy;
+}
+.copy{
+    background: #333333;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.line-red{
+    height: 2px;
+    background: #FF0000;
+}
+.line-blue{
+    height: 2px;
+    background: #0066cc;
+}
+.line-black{
+    height: 1px;
+    background: #000000;
+}

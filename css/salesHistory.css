@@ -1,0 +1,167 @@
+
+            body {
+                background:lightgrey;
+            } 
+            #userid {
+                font-size:120%; color:Navy; text-transform:uppercase; 
+            } 
+            .titlebar {
+                margin-left:-3%; 
+            } 
+            .coname { 
+                text-transform:uppercase; padding:6% 0% 1.5% 0%; 
+            } 
+            a.active, a:active {
+                color:maroon ;
+            } 
+            .glyphicon {
+                font-size:18px;
+            }
+            .firstbar {
+                background-color:black; padding:0.5%; color:white; margin:0%; 
+            }
+            .date {
+                font-size:12px; color:Navy; font-family:"New Times Roman";
+            }
+            .searchitems {
+                font-family:"New Times Roman"; padding:0 1%;
+            }
+            .button {
+                width:14%; background-color:Navy; padding:3px 12px; box-shadow:0 5px  #999; text-align:center; font-weight:bold; font-size:14px; cursor:pointer; color:lightgrey; border:0px; border-radius:6px; -webkit-transition:all 0.5s; transition:all 0.5s;
+            }
+            .button:hover {
+                background-color:#fff; color:Navy; border:2px solid Navy; 
+            }
+            .button span {
+                cursor: pointer; display: inline-block; position: relative; transition: 0.5s;
+            }
+            .button:active {
+                box-shadow:0 2px #666; transform:translateY(8px);
+            } 
+            .space {
+                margin:0 1%; 
+            } 
+            input[list] {
+                width:33%; border:none; background-color:#f1f1f1; border-radius:6px; padding:5px 10px;
+            } 
+            input[type] {
+                width:10%; border:2px solid #f1f1f1; background-color:grey; border-radius:6px; padding:2px 10px; font-size:14px; -webkit-transition:all 0.8s ease-in-out; transition:all 0.8s ease-in-out; 
+            }
+            input[type=date] {
+                width:30%; border:2px solid #ccc; background-color:#f1f1f1; border-radius:6px; padding:2px 10px; font-size:14px; 
+            }
+            input[type=number] {
+                width:200px; border:none; background-color:#f1f1f1; border-radius:6px; padding:2px 10px; 
+            }
+            input[type=text] {
+                width:10%; border:2px solid #ccc; background-color:white; border-radius:6px; padding:2px 10px; font-size:14px; 
+            }
+            textarea {
+                width:100%; height:130px; padding:8px 10px; border:2px solid #ccc; border-radius:6px; background-color:#f8f8f8; font-size:14px; resize:none; 
+            }
+            .tablecontainer {
+                border:3px solid black; border-right:9px ridge black; border-left:9px ridge black; border-radius:5px; padding:0 0.2% 1%; margin:1% 0 0.5%; overflow-y:auto; height:220px; 
+            }
+            #itemlist {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; border-collapse:collapse; width:100%;
+            }
+            #itemlist td, #itemlist th {
+                border:1px solid #ddd; text-align:left; padding:4px;
+            }
+            #itemlist tr:nth-child(even){
+                background-color:#f2f2f2;
+            }
+            #itemlist tr:hover {
+                background-color:black; color:white;
+            }
+            #itemlist th {
+                padding-top:12px; padding-bottom:12px; background-color:Navy; color:white;
+            }
+            .glyphicon-fullscreen {
+                font-size:37px;
+            }
+            /* The Modal (background) */
+            .modal {
+                display:none; /* Hidden by default */ position:fixed; /* Stay in place */ z-index:1; /* Sit on top */ padding-top:0%; /* Location of the box */ left:0; top:0; 
+                width:100%; /* Full width */ height:100%; /* Full height */ overflow:auto; /* Enable scroll if needed */ background-color:rgba(0,0,0,0); /* Fallback color */
+            }
+            /* Modal Content (image) */
+            .modal-content {
+                margin: auto; display: block; width: 80%; max-width: 700px;
+            }
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;
+            }
+            /* Add Animation */
+            .modal-content, #caption {    
+                -webkit-animation-name: zoom; -webkit-animation-duration: 1s; animation-name: zoom; animation-duration: 1s;
+            }
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+            /* Standard syntax */
+            @keyframes zoom {
+                from {transform:scale(0.1)} 
+                to {transform:scale(1)}
+            }
+            /* The Close Button */
+            .close {
+                position:absolute; top:-10%; right:72%; color:black; font-size:50px; font-weight:bold; transition:1s; padding-top: 9%;
+            }
+            .close:hover, .close:focus {
+                color: #bbb; text-decoration: none; cursor: pointer;
+            }
+            /* Responsive Columns */
+            @media only screen and (max-width: 700px){
+                .responsive {
+                    width: 49.99999%; margin: 6px 0;
+                }
+                .modal-content {
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 500px){
+                .responsive {
+                    width: 100%;
+                }
+            }
+            /* Clear Floats */
+            .clearfix:after {
+                content: ""; display: table; clear: both;
+            }
+            .mymodalstyle {
+                background: linear-gradient(to right, gold, white, white, khaki); /* Standard syntax */ padding:5% 3%; margin:auto; margin-top:-3%; width:500px; height:745px; box-shadow:-1px 1px 40px grey, 1px 1px 40px grey, -1px -1px 40px grey, 1px -1px 40px grey; 
+            }
+            .canceltopbar {
+                color:white ; font-size:30px; font-family:New Times Roman; text-shadow:-1px 1px black, 1px 1px black, -1px -1px black, 1px -1px black; 
+            }
+            .cancelsales {
+                width:14%; background-color:Navy; padding:3px 12px; box-shadow:0 5px  #999; text-align:center; font-weight:bold; font-size:14px; cursor:pointer; color:lightgrey; border:0px; border-radius:6px; -webkit-transition:all 0.5s; transition:all 0.5s; 
+            }
+            .cancelsales:hover {
+                background-color:#fff; color:Navy; border:2px solid Navy; 
+            }
+            .cancelsales:active {
+                box-shadow:0 2px #666; transform:translateY(8px);
+            }
+            .mymodalstyle button {
+                width:80%;
+            }
+            .mymodalstyle input[type=text] {
+                width:50%; 
+            }
+            .mymodalstyle input[type=text].desc {
+                width:80%; 
+            }
+            .mymodalstyle input[list] {
+                width:45%; 
+            } 
+            .dates input[type=date] {
+                width:15%; 
+            } 
+            .dates .button {
+                width:20%; 
+            } 

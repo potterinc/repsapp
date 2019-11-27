@@ -1,0 +1,348 @@
+/* my.CSS 2.1 by Jan Egil and Borge Refsnes. Do not remove this line. */
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{-webkit-tap-highlight-color:transparent;background-color:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}dfn{font-style:italic}
+mark{background:#ff0;color:#000}small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}sub{bottom:-0.25em}
+img{border:0}svg:not(:root){overflow:hidden} figure{margin:1em 40px}
+hr{-moz-box-sizing:content-box;box-sizing:content-box}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input[type=checkbox],input[type=radio]{padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{box-sizing:content-box;-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
+legend{border:0;padding:0}pre,textarea{overflow:auto}optgroup{font-weight:bold}
+/* End extract from normalize.css */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
+h1,h2,h3,h4,h5,h6,.my-slim,.my-wide{font-family:"Segoe UI",Arial,sans-serif}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.my-serif{font-family:"Times New Roman",Times,serif}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}
+.my-wide{letter-spacing:4px}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
+img{margin-bottom:-5px}
+a{color:inherit}
+table{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+table,th,td{border:none}
+.my-table-all{border:1px solid #ccc}
+.my-bordered tr,.my-table-all tr{border-bottom:1px solid #ddd}
+.my-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.my-table-all tr:nth-child(odd){background-color:#fff}
+.my-table-all tr:nth-child(even){background-color:#f1f1f1}
+.my-hoverable tbody tr:hover,.my-ul.my-hoverable li:hover{background-color:#ccc}
+.my-centered tr th,.my-centered tr td{text-align:center}
+.my-table td,.my-table th,.my-table-all td,.my-table-all th{padding:6px 8px;display:table-cell;text-align:left;vertical-align:top}
+.my-table th:first-child,.my-table td:first-child,.my-table-all th:first-child,.my-table-all td:first-child{padding-left:16px}
+.my-btn,.my-btn-block{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none !important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
+.my-btn.my-disabled,.my-btn-block.my-disabled,.my-btn-floating.my-disabled,.my-btn:disabled,.my-btn-floating:disabled,.my-btn-floating-large.my-disabled,.my-btn-floating-large:disabled{cursor:not-allowed;opacity:0.3}
+.my-btn.my-disabled *,.my-btn-block.my-disabled,.my-btn-floating.my-disabled *,.my-btn:disabled *,.my-btn-floating:disabled *{pointer-events:none}
+.my-btn.my-disabled:hover,.my-btn-block.my-disabled:hover,.my-btn:disabled:hover,.my-btn-floating.my-disabled:hover,.my-btn-floating:disabled:hover,
+.my-btn-floating-large.my-disabled:hover,.my-btn-floating-large:disabled:hover{box-shadow:none}
+.my-btn:hover,.my-btn-block:hover,.my-btn-floating:hover,.my-btn-floating-large:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.my-btn-block{width:100%}
+.my-btn,.my-btn-floating,.my-btn-floating-large{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}   
+.my-btn-floating,.my-btn-floating-large{display:inline-block;text-align:center;color:#fff;background-color:#000;position:relative;overflow:hidden;z-index:1;padding:0;border-radius:50%;cursor:pointer;font-size:24px}
+.my-btn-floating{width:40px;height:40px;line-height:40px}
+.my-btn-floating-large{width:56px;height:56px;line-height:56px}
+.my-btn-group .my-btn{float:left}
+.my-btn.my-ripple{position:relative}
+.my-ripple:after{content:"";background:#90EE90;display:block;position:absolute;padding-top:300%;padding-left:350%;margin-left:-20px!important;margin-top:-120%;opacity:0;transition:all 0.8s}
+.my-ripple:active:after{padding:0;margin:0;opacity:1;transition:0s}
+.my-badge,.my-tag,.my-sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;font-weight:bold;text-align:center}
+.my-badge{border-radius:50%}
+ul.my-ul{list-style-type:none;padding:0;margin:0}
+ul.my-ul li{padding:6px 2px 6px 16px;border-bottom:1px solid #ddd}
+ul.my-ul li:last-child{border-bottom:none}
+.my-image,.my-tooltip,.my-display-container{position:relative}
+img.my-image,.my-image img{max-width:100%;height:auto}
+.my-image .my-title{position:absolute;bottom:8px;left:16px;color:#fff;font-size:20px}
+.my-fluid{max-width:100%;height:auto}
+.my-tooltip .my-text{display:none}
+.my-tooltip:hover .my-text{display:inline-block}
+.my-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.my-navbar li{float:left}.my-navbar li a{display:block;padding:8px 16px}.my-navbar li a:hover{color:#000;background-color:#ccc}
+.my-navbar .my-dropdown-hover,.my-navbar .my-dropdown-click{position:static}
+.my-navbar .my-dropdown-hover:hover,.my-navbar .my-dropdown-hover:first-child,.my-navbar .my-dropdown-click:hover{background-color:#ccc;color:#000}
+.my-topnav{padding:8px 8px}
+.my-navbar a,.my-topnav a,.my-sidenav a,.my-dropnav a,.my-dropdown-content a,.my-accordion-content a{text-decoration:none !important}
+.my-navbar ul.my-right{list-style-type:none}
+.my-navbar .my-opennav.my-right{float:right !important}
+.my-topnav a{padding:0 8px;border-bottom:3px solid transparent}
+.my-topnav a:hover{border-bottom:3px solid #fff}
+.my-topnav .my-dropdown-hover a{border-bottom:0}
+.my-opennav,.my-closenav{color:inherit}
+.my-opennav:hover,.my-closenav:hover{cursor:pointer;opacity:0.8}
+.my-navbar a,.my-topnav a,.my-sidenav a,.my-dropnav a,.my-pagination li a,.my-hoverable tbody tr,.my-btn,.my-btn-floating,.my-btn-floating-large,.my-hover-opacity,.my-hover-shadow,.my-accordion-content a,.my-dropdown-content a,.my-dropdown-click:hover,.my-dropdown-hover:hover,.my-opennav,.my-closenav,.my-closebtn,
+.my-hover-amber,.my-hover-aqua,.my-hover-blue,.my-hover-light-blue,.my-hover-brown,.my-hover-cyan,.my-hover-blue-grey,.my-hover-green,.my-hover-light-green,.my-hover-indigo,.my-hover-khaki,.my-hover-lime,.my-hover-orange,.my-hover-deep-orange,.my-hover-pink,
+.my-hover-purple,.my-hover-deep-purple,.my-hover-red,.my-hover-sand,.my-hover-teal,.my-hover-yellow,.my-hover-white,.my-hover-black,.my-hover-grey,.my-hover-light-grey,.my-hover-dark-grey,.my-hover-text-amber,.my-hover-text-aqua,.my-hover-text-blue,.my-hover-text-light-blue,
+.my-hover-text-brown,.my-hover-text-cyan,.my-hover-text-blue-grey,.my-hover-text-green,.my-hover-text-light-green,.my-hover-text-indigo,.my-hover-text-khaki,.my-hover-text-lime,.my-hover-text-orange,.my-hover-text-deep-orange,.my-hover-text-pink,.my-hover-text-purple,
+.my-hover-text-deep-purple,.my-hover-text-red,.my-hover-text-sand,.my-hover-text-teal,.my-hover-text-yellow,.my-hover-text-white,.my-hover-text-black,.my-hover-text-grey,.my-hover-text-light-grey,.my-hover-text-dark-grey
+{-webkit-transition:all 0.3s ease;transition:all 0.3s ease}
+.my-sidenav{height:100%;width:200px;background-color:#fff;position:fixed !important;z-index:1;overflow:auto}
+.my-sidenav a{padding:4px 2px 4px 16px}
+.my-sidenav a:hover{background-color:#ccc}
+.my-sidenav a,.my-dropnav a{display:block}
+.my-sidenav .my-dropdown-hover:hover,.my-sidenav .my-dropdown-hover:first-child,.my-sidenav .my-dropdown-click:hover{background-color:#ccc;color:#000}
+.my-sidenav .my-dropdown-hover,.my-sidenav .my-dropdown-click {width:100%}.my-sidenav .my-dropdown-hover .my-dropdown-content,.my-sidenav .my-dropdown-click .my-dropdown-content{min-width:100%}
+.my-main{transition:margin-left .4s}
+.my-dropnav {background-color:#fff}
+.my-dropnav a:hover{text-decoration:underline !important}
+.my-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.my-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;}.my-closebtn{text-decoration:none;float:right;font-size:24px;font-weight:bold;color:inherit}
+.my-closebtn:hover,.my-closebtn:focus{color:#000;text-decoration:none;cursor:pointer}
+.my-pagination{display:inline-block;padding:0;margin:0}
+.my-pagination li{display:inline}
+.my-pagination li a{text-decoration:none;color:#000;float:left;padding:8px 16px}
+.my-pagination li a:hover,.my-pagination li a:focus{background-color:#ccc}
+.my-input-group,.my-group{margin-top:24px;margin-bottom:24px}
+.my-input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
+.my-label{color:#009688}
+.my-input:not(:valid)~.my-validate{color:#f44336}
+.my-select{padding:4px 0;width:100%;color:#000;border:1px solid transparent;border-bottom:1px solid #009688}
+.my-select select:focus{color:#000;border:1px solid #009688}.my-select option[disabled]{color:#009688}
+.my-dropdown-click,.my-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.my-dropdown-hover:hover .my-dropdown-content{display:block;z-index:1}
+.my-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0}
+.my-dropdown-content a{padding:6px 16px;display:block}
+.my-dropdown-content a:hover{background-color:#ccc}
+.my-accordion {width:100%;cursor:pointer}
+.my-accordion-content{cursor:auto;display:none;position:relative;width:100%;margin:0;padding:0}
+.my-accordion-content a{padding:6px 16px;display:block}
+.my-accordion-content a:hover{background-color:#ccc}
+.my-progress-container{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
+.my-progressbar{background-color:#757575;height:100%;position:absolute;line-height:inherit}
+input[type=checkbox].my-check,input[type=radio].my-radio{width:24px;height:24px;position:relative;top:6px}
+input[type=checkbox].my-check:checked+.my-validate,input[type=radio].my-radio:checked+.my-validate{color:#009688} 
+input[type=checkbox].my-check:disabled+.my-validate,input[type=radio].my-radio:disabled+.my-validate{color:#aaa}
+.my-responsive{overflow-x:auto}
+.my-container:after,.my-row:after,.my-row-padding:after,.my-topnav:after,.my-clear:after,.my-btn-group:before,.my-btn-group:after{content:"";display:table;clear:both}
+.my-col,.my-half,.my-third,.my-twothird,.my-quarter{float:left;width:100%}
+.my-col.s1{width:8.33333%}
+.my-col.s2{width:16.66666%}
+.my-col.s3{width:24.99999%}
+.my-col.s4{width:33.33333%}
+.my-col.s5{width:41.66666%}
+.my-col.s6{width:49.99999%}
+.my-col.s7{width:58.33333%}
+.my-col.s8{width:66.66666%}
+.my-col.s9{width:74.99999%}
+.my-col.s10{width:83.33333%}
+.my-col.s11{width:91.66666%}
+.my-col.s12,.my-half,.my-third,.my-twothird,.my-quarter{width:99.99999%}
+@media only screen and (min-width:601px){
+    .my-col.m1{width:8.33333%}
+    .my-col.m2{width:16.66666%}
+    .my-col.m3,.my-quarter{width:24.99999%}
+    .my-col.m4,.my-third{width:33.33333%}
+    .my-col.m5{width:41.66666%}
+    .my-col.m6,.my-half{width:49.99999%}
+    .my-col.m7{width:58.33333%}
+    .my-col.m8,.my-twothird{width:66.66666%}
+    .my-col.m9{width:74.99999%}
+    .my-col.m10{width:83.33333%}
+    .my-col.m11{width:91.66666%}
+    .my-col.m12{width:99.99999%}}
+@media only screen and (min-width:993px){
+    .my-col.l1{width:8.33333%}
+    .my-col.l2{width:16.66666%}
+    .my-col.l3,.my-quarter{width:24.99999%}
+    .my-col.l4,.my-third{width:33.33333%}
+    .my-col.l5{width:41.66666%}
+    .my-col.l6,.my-half{width:49.99999%}
+    .my-col.l7{width:58.33333%}
+    .my-col.l8,.my-twothird{width:66.66666%}
+    .my-col.l9{width:74.99999%}
+    .my-col.l10{width:83.33333%}
+    .my-col.l11{width:91.66666%}
+    .my-col.l12{width:99.99999%}}
+.my-content{max-width:980px;margin:auto}
+.my-rest{overflow:hidden}
+.my-hide{display:none !important}.my-show-block,.my-show{display:block !important}.my-show-inline-block{display:inline-block !important}
+@media (max-width:601px){.my-modal-content{margin:50px 10px 10px 10px;width:auto !important}}
+@media (max-width:768px){.my-modal-content{width:500px}}
+@media (min-width:992px){.my-modal-content{width:900px}}
+@media screen and (max-width:601px){.my-topnav a{display:block}.my-navbar li{float:none}.my-navbar div.my-right,.my-navbar li.my-right{float:none !important;margin:0;padding:0}}	
+@media screen and (max-width:601px){.my-topnav .my-dropdown-hover .my-dropdown-content,.my-navbar .my-dropdown-click .my-dropdown-content,.my-navbar .my-dropdown-hover .my-dropdown-content{position:relative}}	
+@media screen and (max-width:601px){.my-topnav,.my-navbar{text-align:center}}
+@media (max-width:601px){.my-hide-small{display:none !important}}
+@media (max-width:991px) and (min-width:601px){.my-hide-medium{display:none !important}}
+@media (min-width:992px){.my-hide-large{display:none !important}}
+@media screen and (max-width:991px){.my-sidenav.my-collapse{display:none}.my-main{margin-left:0 !important}}
+@media screen and (min-width:991px){.my-sidenav.my-collapse{display:block !important}}
+.my-top,.my-bottom{position:fixed;width:100%;z-index:1}.my-top{top:0}.my-bottom{bottom:0}
+.my-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.my-left{float:left !important}.my-right{float:right !important}
+.my-tiny{font-size:10px !important}.my-small{font-size:12px !important}
+.my-medium{font-size:15px !important}
+.my-large{font-size:18px !important}
+.my-xlarge{font-size:24px !important}
+.my-xxlarge{font-size:36px !important}
+.my-xxxlarge{font-size:48px !important}
+.my-jumbo{font-size:64px !important}
+.my-vertical{word-break:break-all;line-height:1;text-align:center;width:0.6em}
+.my-left-align{text-align:left !important}.my-right-align{text-align:right !important}
+.my-justify{text-align:justify !important}
+.my-center{text-align:center !important}
+.my-display-topleft{position:absolute;left:0;top:0}
+.my-display-topright{position:absolute;right:0;top:0}
+.my-display-bottomleft{position:absolute;left:0;bottom:0}
+.my-display-bottomright{position:absolute;right:0;bottom:0}
+.my-display-middle{position:absolute;left:0;top:50%;width:100%;text-align:center}
+.my-circle{border-radius:50% !important}
+.my-round-small{border-radius:2px !important}.my-round,.my-round-medium{border-radius:4px !important}
+.my-round-large{border-radius:8px !important}.my-round-xlarge{border-radius:16px !important}
+.my-round-xxlarge{border-radius:32px !important}.my-round-jumbo{border-radius:64px !important}
+.my-border-0{border:0 !important}
+.my-border{border:1px solid #ccc !important}
+.my-border-top{border-top:1px solid #ccc !important}.my-border-bottom{border-bottom:1px solid #ccc !important}
+.my-border-left{border-left:1px solid #ccc !important}.my-border-right{border-right:1px solid #ccc !important}
+.my-margin-0{margin:0 !important}
+.my-margin-2{margin:2px !important}
+.my-margin-4{margin:4px !important}
+.my-margin-8{margin:8px !important}
+.my-margin-12{margin:12px !important}
+.my-margin-16{margin:16px !important}
+.my-margin-24{margin:24px !important}
+.my-margin-32{margin:32px !important}
+.my-margin-64{margin:64px !important}
+.my-margin{margin:16px !important}
+.my-margin-top{margin-top:16px !important}.my-margin-bottom{margin-bottom:16px !important}
+.my-margin-left{margin-left:16px !important}.my-margin-right{margin-right:16px !important}
+.my-padding-tiny{padding:2px 4px !important}
+.my-padding-small{padding:4px 8px !important}
+.my-padding-medium,.my-padding,.my-form{padding:8px 16px !important}
+.my-padding-large{padding:12px 24px !important}
+.my-padding-xlarge{padding:16px 32px !important}
+.my-padding-xxlarge{padding:24px 48px !important}
+.my-padding-jumbo{padding:32px 64px !important}
+.my-padding-0{padding:0 !important}
+.my-padding-4{padding-top:4px !important;padding-bottom:4px !important}
+.my-padding-8{padding-top:8px !important;padding-bottom:8px !important}
+.my-padding-16{padding-top:16px !important;padding-bottom:16px !important}
+.my-padding-24{padding-top:24px !important;padding-bottom:24px !important}
+.my-padding-32{padding-top:32px !important;padding-bottom:32px !important}
+.my-padding-48{padding-top:48px !important;padding-bottom:48px !important}
+.my-padding-64{padding-top:64px !important;padding-bottom:64px !important}
+.my-padding-top{padding-top:8px !important}.my-padding-bottom{padding-bottom:8px !important}
+.my-padding-left{padding-left:16px !important}.my-padding-right{padding-right:16px !important}
+.my-topbar{border-top:1px solid #ccc !important}.my-bottombar{border-bottom:6px solid #ccc !important}
+.my-leftbar{border-left:6px solid #ccc !important}.my-rightbar{border-right:6px solid #ccc !important}
+.my-border-red{border-color:#ff6060 !important}.my-border-yellow{border-color:#daa520 !important}
+.my-border-green{border-color:#66aa66 !important}.my-border-blue{border-color:#1E90FF !important}
+.my-row-padding,.my-row-padding>.my-half,.my-row-padding>.my-third,.my-row-padding>.my-twothird,.my-row-padding>.my-quarter,.my-row-padding>.my-col{padding:0 8px}
+.my-spin{animation:my-spin 2s infinite linear;-webkit-animation:my-spin 2s infinite linear}
+@-webkit-keyframes my-spin{
+    0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+    @keyframes my-spin{
+        0%{-webkit-transform:rotate(0deg);transform: rotate(0deg)}
+        100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+        .my-container{padding:0.01em 16px}
+        .my-example{background-color:#f1f1f1;padding:0.01em 16px}
+        .my-section,.my-paragraph{margin-top:16px;margin-bottom:16px}
+        .my-code{font-family:Consolas,"courier new";font-size:16px;line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #009688;word-wrap:break-word}
+        .my-example,.my-code,.my-reference{margin:20px 0}
+        .my-card{border:1px solid #ccc}
+        .my-card-2,.my-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important}
+        .my-card-4,.my-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important}
+        .my-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important}
+        .my-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important}
+        .my-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21) !important}
+        .my-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22) !important}
+        .my-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
+        @-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+        @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+        .my-animate-opacity{-webkit-animation:opac 4s;animation:opac 4s}
+        @-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+        @keyframes opac{from{opacity:0} to{opacity:1}}
+        .my-animate-top{position:relative;-webkit-animation:animatetop 0.4s;animation:animatetop 0.4s}
+        @-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+        @keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+        .my-animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
+        @-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+        @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+        .my-animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
+        @-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+        @keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+        .my-animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
+        @-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+        @keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+        .my-animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
+        @-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
+        @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+        .my-animate-input{-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.my-animate-input:focus{width:100% !important}
+        .my-amber,.my-hover-amber:hover{color:#000 !important;background-color:#ffc107 !important}
+        .my-aqua,.my-hover-aqua:hover{color:#000 !important;background-color:#00ffff !important}
+        .my-blue,.my-hover-blue:hover{color:#fff !important;background-color:#2196F3 !important}
+        .my-light-blue,.my-hover-light-blue:hover{color:#000 !important;background-color:#87CEEB !important}
+        .my-brown,.my-hover-brown:hover{color:#fff !important;background-color:#795548 !important}
+        .my-cyan,.my-hover-cyan:hover{color:#000 !important;background-color:#00bcd4 !important}
+        .my-blue-grey,.my-hover-blue-grey:hover{color:#fff !important;background-color:#607d8b !important}
+        .my-green,.my-hover-green:hover{color:#fff !important;background-color:#4CAF50 !important}
+        .my-light-green,.my-hover-light-green:hover{color:#000 !important;background-color:#8bc34a !important}
+        .my-indigo,.my-hover-indigo:hover{color:#fff !important;background-color:#3f51b5 !important}
+        .my-khaki,.my-hover-khaki:hover{color:#000 !important;background-color:#f0e68c !important}
+        .my-lime,.my-hover-lime:hover{color:#000 !important;background-color:#cddc39 !important}
+        .my-orange,.my-hover-orange:hover{color:#000 !important;background-color:#ff9800 !important}
+        .my-deep-orange,.my-hover-deep-orange:hover{color:#fff !important;background-color:#ff5722 !important}
+        .my-pink,.my-hover-pink:hover{color:#fff !important;background-color:#e91e63 !important}
+        .my-purple,.my-hover-purple:hover{color:#fff !important;background-color:#9c27b0 !important}
+        .my-deep-purple,.my-hover-deep-purple:hover{color:#fff !important;background-color:#673ab7 !important}
+        .my-goldenrod,.my-hover-goldenrod:hover{color:#fff !important;background-color:#daa520 !important}
+        .my-Khaki,.my-hover-Khaki:hover{color:#000 !important;background-color:#f0e68c !important}
+        .my-DarkSalmon,.my-hover-DarkSalmon:hover{color:#fff !important;background-color:#e9967a !important}
+        .my-maroon,.my-hover-maroon:hover{color:#fff !important;background-color:#800000 !important}
+        .my-red,.my-hover-red:hover{color:#fff !important;background-color:#f44336 !important}
+        .my-sand,.my-hover-sand:hover{color:#000 !important;background-color:#fdf5e6 !important}
+        .my-teal,.my-hover-teal:hover{color:#fff !important;background-color:#009688 !important}
+        .my-yellow,.my-hover-yellow:hover{color:#000 !important;background-color:#ffeb3b !important}
+        .my-white,.my-hover-white:hover{color:#000 !important;background-color:#fff !important}
+        .my-black,.my-hover-black:hover{color:#fff !important;background-color:#000 !important}
+        .my-grey,.my-hover-grey:hover{color:#000 !important;background-color:#9e9e9e !important}
+        .my-light-grey,.my-hover-light-grey:hover{color:#000 !important;background-color:#f1f1f1 !important}
+        .my-dark-grey,.my-hover-dark-grey:hover{color:#fff !important;background-color:#616161 !important}
+        .my-pale-red,.my-hover-pale-red:hover{color:#000 !important;background-color:#ffe7e7 !important}.my-pale-green,.my-hover-pale-green:hover{color:#000 !important;background-color:#e7ffe7 !important}
+        .my-pale-yellow,.my-hover-pale-yellow:hover{color:#000 !important;background-color:#ffffd7 !important}.my-pale-blue,.my-hover-pale-blue:hover{color:#000 !important;background-color:#e7ffff !important}
+        .my-text-amber,.my-hover-text-amber:hover{color:#ffc107 !important}
+        .my-text-aqua,.my-hover-text-aqua:hover{color:#00ffff !important}
+        .my-text-blue,.my-hover-text-blue:hover{color:#2196F3 !important}
+        .my-text-light-blue,.my-hover-text-light-blue:hover{color:#87CEEB !important}
+        .my-text-brown,.my-hover-text-brown:hover{color:#795548 !important}
+        .my-text-cyan,.my-hover-text-cyan:hover{color:#00bcd4 !important}
+        .my-text-blue-grey,.my-hover-text-blue-grey:hover{color:#607d8b !important}
+        .my-text-green,.my-hover-text-green:hover{color:#4CAF50 !important}
+        .my-text-light-green,.my-hover-text-light-green:hover{color:#8bc34a !important}
+        .my-text-indigo,.my-hover-text-indigo:hover{color:#3f51b5 !important}
+        .my-text-khaki,.my-hover-text-khaki:hover{color:#b4aa50 !important}
+        .my-text-lime,.my-hover-text-lime:hover{color:#cddc39 !important}
+        .my-text-orange,.my-hover-text-orange:hover{color:#ff9800 !important}
+        .my-text-deep-orange,.my-hover-text-deep-orange:hover{color:#ff5722 !important}
+        .my-text-pink,.my-hover-text-pink:hover{color:#e91e63 !important}
+        .my-text-purple,.my-hover-text-purple:hover{color:#9c27b0 !important}
+        .my-text-deep-purple,.my-hover-text-deep-purple:hover{color:#673ab7 !important}
+        .my-text-red,.my-hover-text-red:hover{color:#f44336 !important}
+        .my-text-sand,.my-hover-text-sand:hover{color:#fdf5e6 !important}
+        .my-text-teal,.my-hover-text-teal:hover{color:#009688 !important}
+        .my-text-yellow,.my-hover-text-yellow:hover{color:#d2be0e !important}
+        .my-text-white,.my-hover-text-white:hover{color:#fff !important}
+        .my-text-black,.my-hover-text-black:hover{color:#000 !important}
+        .my-text-grey,.my-hover-text-grey:hover{color:#757575 !important}
+        .my-text-light-grey,.my-hover-text-light-grey:hover{color:#f1f1f1 !important}
+        .my-text-dark-grey,.my-hover-text-dark-grey:hover{color:#3a3a3a !important}
+        .my-opacity,.my-hover-opacity:hover{opacity:0.60}.my-text-shadow{text-shadow:1px 1px 0 #444}.my-text-shadow-white{text-shadow:1px 1px 0 #ddd}
