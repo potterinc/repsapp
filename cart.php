@@ -468,7 +468,7 @@ require_once "qIconnection.php";
                                 $useroptioncont = '">';
                                 $useroptionend = 'user </option>';
 
-                                $sql = "SELECT DISTINCT FirstName, LastName FROM RegUsers";
+                                $sql = "SELECT DISTINCT FirstName, LastName FROM regusers";
                                 $result = $conn->query($sql);
 
                                 if ($result->num_rows > 0) {

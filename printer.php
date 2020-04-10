@@ -46,7 +46,7 @@ require_once "qIconnection.php";
         $amt = "";
         $qty = "";
         $itmPrice = "";
-        $errorMsg = "";
+        $errorMsg = $category = "";
         $oldAll = "";
         $oldSuc = "";
         $oldCash = "";
@@ -153,9 +153,9 @@ require_once "qIconnection.php";
                 //updating income
                 $sType = "Sales";
                 $salesDate = date('Y-m-d');
-                $query = "INSERT INTO income (salesType, salesDesc, salesDate, salesBy, paidTo, totalCost, Customer, cashPaid, transferPaid, creditRemaining, lastDate, staffNote) VALUES 
+                $sql_query = "INSERT INTO income (salesType, salesDesc, salesDate, salesBy, paidTo, totalCost, Customer, cashPaid, transferPaid, creditRemaining, lastDate, staffNote) VALUES 
                 ('$sType', '$salesDesc', '$salesDate', '$salesRep', '$payRecieved', $totalSales, '$customer', $cashPaid, $ePay, $credit, '$salesDate')";
-                $queryResult = mysqli_query($conn, $query);
+                $queryResult = $conn->query($sql_query);
                 $lastId = mysqli_insert_id($conn);
 
                 //Updating user activities
@@ -164,7 +164,7 @@ require_once "qIconnection.php";
                 $dataTable = mysqli_fetch_assoc($sqlResult);
                 $totalQtySold = $dataTable["totalQuantitySold"];
 
-                if (mysqli_num_rows($queryResult) == TRUE) {
+                if ($queryResult->num_rows > 0) {
                     // output data of each row
                     $storevalue = mysqli_fetch_assoc($queryResult);
                     $oldAll = $storevalue["allPurchase"];
