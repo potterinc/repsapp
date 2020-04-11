@@ -255,7 +255,7 @@ if (isset($_REQUEST["view-order"]))
                 if (isset($_REQUEST["del-user"]))
                 {
                     $id = $_REQUEST["usr-id"];
-                    $query = "SELECT * FROM RegUsers WHERE Id =".$id;
+                    $query = "SELECT * FROM regusers WHERE Id =".$id;
                     $result = mysqli_query($conn, $query);
 
                     if (mysqli_num_rows($result) > 0)
@@ -265,7 +265,7 @@ if (isset($_REQUEST["view-order"]))
                             $firstname = $data["FirstName"];
                             $lastname = $data["LastName"];
                         }
-                    $sql = "DELETE FROM RegUsers WHERE Id =".$id;
+                    $sql = "DELETE FROM regusers WHERE Id =".$id;
                     $retval = mysqli_query($conn, $sql);
                     printf("<script>alert('%s %s has been deleted')</script>", $firstname, $lastname);
                         if ($firstname == $_SESSION["fname"] && $lastname == $_SESSION["lname"])
@@ -509,7 +509,7 @@ if (isset($_REQUEST["edit-order"]))
                                         </thead>
                                         <tbody>
                                         <?php
-                                            $query = "SELECT * FROM RegUsers";
+                                            $query = "SELECT * FROM regusers";
                                             $result = mysqli_query($conn, $query);
                                             while($data = mysqli_fetch_assoc($result))
                                             {

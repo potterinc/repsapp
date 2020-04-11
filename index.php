@@ -40,8 +40,7 @@ session_start();
         $fname = $lname = "";
         $quest = $_POST['question'];
         $ans = $_REQUEST["answer"];
-        $psk = $_POST["pass"];
-        //$crypto_pwd = password_hash($_POST["pass"], PASSWORD_DEFAULT);
+        $psk = password_hash($_POST["pass"], PASSWORD_DEFAULT);
 
         // Validate firstname
         $input_name = trim($_POST["firstname"]);
@@ -73,13 +72,14 @@ session_start();
             $email = $input_email;
         }
         $reg_date = date("d-M-Y");
+        
         // Check for error before inserting into database
         if (empty($fname_err) && empty($lname_err) && empty($email_err) && empty($ans_err)) {
 
-            $sql = "INSERT INTO RegUsers (FirstName, LastName, Usrname, PWord, SecQuest, Ans, DateReg)
+            $sql = "INSERT INTO regusers (FirstName, LastName, Usrname, PWord, SecQuest, Ans, DateReg)
                     VALUES ('{$fname}','{$lname}','{$email}','{$psk}','{$quest}','{$ans}','{$reg_date}')";
 
-            $result = mysqli_query($conn, $sql);
+            $result = $conn->query($sql);
 
             if ($result == TRUE) {
                 print("<script>alert('Thank You! {$fname} {$lname}, Your Registration was Successful')</script>");
@@ -94,19 +94,23 @@ session_start();
 
     if (isset($_POST["sign-in"])) {
         $username = $_POST["user-name"];
-        $password = $_POST["pass-word"];
-        $log_sql = "SELECT * FROM RegUsers WHERE Usrname='" . $username . "' AND PWord='" . $password . "'";
+        $log_sql = "SELECT * FROM regusers WHERE Usrname='" . $username . "'";
         $retval = mysqli_query($conn, $log_sql);
         if (mysqli_num_rows($retval) > 0) {
             while ($row = mysqli_fetch_assoc($retval)) {
-                $_SESSION['fname'] = $row['FirstName'];
-                $_SESSION['lname'] = $row['LastName'];
+            
+            if(password_verify($_REQUEST['pass-word'], $row['PWord']))
+            {
+            
+            	 $_SESSION['fname'] = $row['FirstName'];
+               $_SESSION['lname'] = $row['LastName'];
+               print("<script>location.href='dashboard.php'</script>");
             }
-            print("<script>location.href='dashboard.php'</script>");
-        } else {
-            print("<script>alert('Invalid username or password')</script>");
-        }
-    }
+            else
+            	print("<script>alert('Invalid username or password')</script>");
+      		}		
+    	}
+  	}
 
     #Change Password
     if (isset($_REQUEST["change-pwd"])) {
@@ -116,7 +120,7 @@ session_start();
         $_user = $_REQUEST["user-name"];
 
         if ($new_password == $re_password) {
-            $query = "UPDATE RegUsers SET PWord='" . $new_password . "' WHERE Id=" . $user_id;
+            $query = "UPDATE regusers SET PWord='" . password_hash($new_password, PASSWORD_DEFAULT) . "' WHERE Id=" . $user_id;
             $result = mysqli_query($conn, $query);
             if ($result == TRUE) {
                 printf("<script>alert('Password Updated for %s')</script>", $_user);
@@ -131,7 +135,7 @@ session_start();
         $question = $_REQUEST["question"];
         $answer = $_REQUEST["answer"];
 
-        $query = "SELECT * FROM RegUsers WHERE Usrname='{$username}' AND SecQuest='{$question}' AND Ans='{$answer}'";
+        $query = "SELECT * FROM regusers WHERE Usrname='{$username}' AND SecQuest='{$question}' AND Ans='{$answer}'";
         $result = $conn->query($query);
         if (mysqli_num_rows($result) > 0) {
             while ($data = mysqli_fetch_assoc($result)) {
